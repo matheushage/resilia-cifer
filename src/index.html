@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>| Cifra de César |</title>
+</head>
+
+<body>
+  <main>
+    <div class="box">
+      <form class="forms" name="formulario">
+        <legend>Let's Decifer</legend>
+        <div class="mensagem">
+          <input type="text" name="texto" id="texto" class="inputTexto" />
+        </div>
+        <div class="opcao">
+          <label for="option">Choose your language</label>
+          <select name="escolhaLinguaguem" class="escolhaLinguaguem" id="opcaoLinguaguem" required>
+            <option value="semValor" id="semValor" disabled selected></option>
+            <option value="cCesar" id="cCesar">Cifra de César</option>
+            <option value="Base64" id="base64">Base64</option>
+          </select>
+        </div>
+        <div class="incremento" style="display: none" id="valorIncremento">
+          <p>Increment</p>
+          <input type="number" class="inputIncremento" id="numeroIncrementos" default="0" min="1" value="1" />
+        </div>
+        <div class="decoder">
+          <input type="radio" name="codificar" id="codificar" class="codEDeco" value="codificar" /><label
+            for="codificar">Coding</label>
+          <input type="radio" name="codificar" id="decodificar" class="codEDeco" value="decodificar" /><label
+            for="decodificar">Decoding</label>
+        </div>
+        <button> Start </button>
+        <div class="saida">
+          <textarea disabled class="areaSaida" id="saidaTexto"></textarea>
+        </div>
+
+        <div id="img-viajante">
+          <img
+            src="https://static.vecteezy.com/ti/vetor-gratis/p3/5363865-astronauta-em-traje-espacial-flutuante-plano-ilustracao-macho-cosmonauta-viajante-espacial-voando-em-gravidade-zero-e-mostrando-sinal-ok-personagem-de-desenho-isolado-em-fundo-branco-missao-cosmica-vetor.jpg"
+            alt="Viajante espacial" height="500px" width="">
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="../index.js"></script>
+</body>
+
+</html>
